@@ -4,8 +4,14 @@ get_header();
 
 <section class="generic-blog">
     <div class="container">
-        <h1 class="generic-blog-h1">Bienvenidos a Nuestro Blog</h1>
-        <p class="generic-blog-p">Aqui encontrarás artículos de diversos tópicos.</p>
+        <h1 class="generic-blog-h1"> <?php the_archive_title() ?> </h1>
+        <p class="generic-blog-p"> <?php if (is_category()) {
+            echo "Aqui encontrarás todas las publicaciones relacionadas a la Categoria: "; echo "<b>"; single_cat_title(); echo "</b>";
+        }
+            if (is_author()) {
+                echo "Aqui encontrarás todas las publicaciones hechas por: "; echo "<b>"; the_author(); echo "</b>";
+            }
+         ?></p>
         <div class="flex-parent-blog-item">
           <?php
           
@@ -34,9 +40,9 @@ get_header();
 
             <div>
              
-            <span class="pagination"> <?php echo paginate_links(); ?></span>
-          
-            </div>
+             <span class="pagination"> <?php echo paginate_links(); ?></span>
+           
+             </div>
     </div>
 </section>
 

@@ -231,7 +231,7 @@
             <section class="blog-section">
                 <div class="container">
 
-                    <h2 class=""> Entradas de Blog Recientes</h2>
+                    <h2 class=""> Entradas de Blog Recientes:</h2>
 
                     <div class="blog-item-parent">
 
@@ -262,7 +262,7 @@
             </div> <!-- blog-item-parent ends here -->
 
                 <div class="recent__posts__cta">
-                <a class="cta" href="<?php echo site_url('/blog'); ?>">Ver todas las Entradas del Blog</a>
+                <a class="cta" href="<?php echo site_url('/blog'); ?>">Ir al blog</a>
                 </div>
 
 
