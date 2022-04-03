@@ -15,6 +15,8 @@ while(have_posts()) {
     
 <?php } ?>
 
+<a class="cta" href="<?php echo site_url('/blog') ?>">Volver a Blogs...</a>
+
 </div>
 
 
