@@ -295,6 +295,10 @@ h1 {
 
 /* WORDPRESS BLOG STYLES */
 
+.single-blog-content li {
+    margin-left: 1.5rem;
+}
+
 .blog-author-info {
     font-size: 1rem;
     font-weight: bold;
