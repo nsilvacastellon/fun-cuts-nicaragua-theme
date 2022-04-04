@@ -509,6 +509,10 @@ h1 {
     flex-basis: 48%;
 }
 
+.blog-author-info { /* single blog  */
+    display: inline-block;
+}
+
 .flex-parent-blog-item { /* index all blogs */
     
     flex-direction: row;
