@@ -5,6 +5,7 @@ get_header();
 <section class="generic-blog">
     <div class="container">
         <h1 class="generic-blog-h1"> <?php the_archive_title() ?> </h1>
+        <span> <?php the_archive_description();  ?></span>
         <p class="generic-blog-p"> <?php if (is_category()) {
             echo "Aqui encontrarás todas las publicaciones relacionadas a la Categoria: "; echo "<b>"; single_cat_title(); echo "</b>";
         }

@@ -15,6 +15,18 @@ while(have_posts()) {
     
 <?php } ?>
 
+
+<div id="author-bio">
+<div id="author-avatar">
+<?php echo get_avatar( get_the_author_meta('user_email'), '80', '' ); ?>
+</div>
+<div id="author-description">
+<h3><?php the_author_link(); ?></h3>
+<?php the_author_meta('description'); ?>
+    </div>
+</div>
+
+
 <a class="cta" href="<?php echo site_url('/blog') ?>">Volver a Blogs...</a>
 
 </div>
