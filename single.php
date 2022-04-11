@@ -16,13 +16,18 @@ while(have_posts()) {
 <?php } ?>
 
 
-<div id="author-bio">
-<div id="author-avatar">
-<?php echo get_avatar( get_the_author_meta('user_email'), '80', '' ); ?>
-</div>
-<div id="author-description">
-<h3><?php the_author_link(); ?></h3>
-<?php the_author_meta('description'); ?>
+<div class="single-author-bio">
+    <div class="single-author-avatar">
+        <?php echo get_avatar( get_the_author_meta('user_email'), '100', '' ); ?>
+        <h3><?php the_author_posts_link(); ?></h3>
+    </div>
+    <div class="single-author-description">
+        
+        <p><?php the_author_meta('description'); ?></p>
+        <p><?php the_author_meta('user_email'); ?></p>
+        <p><?php the_author_meta('user_url'); ?></p> 
+    
+</p>
     </div>
 </div>
 
