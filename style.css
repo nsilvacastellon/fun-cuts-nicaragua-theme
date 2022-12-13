@@ -1,0 +1,557 @@
+/*
+Theme Name: Fun Cuts Nicaragua
+Author: Jose Silva
+Version: 1.0
+*/
+
+
+*, *::before, *::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --header-bg-color: #0E6498;
+    --yellow-bg-color: #FFED0B;
+    --light-blue-bg-color: #83C6F1;
+    --icons-bg-color: #ECB858;
+    --lime-green-bg-color: #99C44E;
+    --cta-bg-color: #DC4432;
+    --title-link-font: 'Oswald', sans-serif;
+    --regular-font: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--regular-font);
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    font-family: var(--title-link-font);
+    padding-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.header-container {
+  
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+    /* border: 2px red solid; */
+}
+
+.header {
+    background-color: var(--header-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.site-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mobile-menu {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.toggle-nav {
+    display: block;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-items:last-child {
+    background: var(--cta-bg-color);
+    padding: .30em .6em;
+    margin: 1rem 0;
+    //animation: cta 4s ease-in-out infinite alternate;
+}
+
+.nav-menu {
+    font-family: var(--title-link-font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+    /* border: 2px #ff0000 solid; */
+}
+
+.hero-section{
+    background: url(images/hero-img-small.jpg) no-repeat center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 5rem 0;
+    color: white;
+    
+}
+
+.transparent-div{
+    background: rgb(0, 0, 0, .8);
+    padding: 5rem 0;
+
+}
+
+.cta {
+
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    background: var(--cta-bg-color);
+    padding: .30em 1em;
+    margin: 1rem 0;
+    /* border-radius: 100px; */
+}
+
+.cta:hover {
+    background: silver;
+}
+
+.parallax1 {
+    background: url('images/colaboradores-frente-a-entrada-de-peluqueria-fun-cuts-nicaragua.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 37.5rem; /*   SET HIGHT TO SEE EFFECT */
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .parallax1-h2 {
+    background-color: rgba(255, 255, 128, .5);
+    padding: 2rem;
+    text-align: center;
+  }
+
+.section1 {
+    background-color: var(--yellow-bg-color);
+    color: black;
+}
+
+.section2 {
+    background-color: var(--light-blue-bg-color);
+}
+
+.section2-p-flex-child {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: black;
+}
+
+.section3 {
+    color: black;
+}
+
+.section3-p1 {
+    padding-bottom: 1rem;
+}
+
+.icons-section {
+    background-color: var(--icons-bg-color);
+    color: white;
+    padding-top: 3rem;
+}
+
+/* .icons1, .icons2, .icons3 {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.icons1-1, .icons2-1, .icons3-1 {
+    margin-bottom: 3rem;
+}
+
+.fa-baby, .fa-child, .fa-female, .fa-gamepad, .fa-desktop, .fa-car-side, .fa-air-freshener {
+    color: black;
+    font-size: 10rem;
+    display: block;
+    text-align: center;
+} */
+
+.icons-section a {
+    display: block;
+    text-align: center;
+}
+
+.icons-section p {
+    text-align: center;
+}
+
+.baby-icon, .child-icon, .female-icon, .gamepad-icon, .desktop-icon, .car-icon, .bottle-icon {
+    margin-bottom: 3rem;
+}
+
+.fa-baby, .fa-child, .fa-female, .fa-gamepad, .fa-desktop, .fa-car-side, .fa-air-freshener {
+    color: black;
+    font-size: 10rem;
+}
+
+.fa-gamepad {
+    animation: gamepad 2s ease-in-out infinite alternate;
+}
+
+.fa-car-side {
+    animation: car 2s ease-in-out infinite alternate;
+}
+
+.section4 {
+    background-color: var(--cta-bg-color);
+    color: white;
+}
+
+.section5 {
+    background-color: var(--lime-green-bg-color);
+    color: white;
+}
+
+.section6 {
+    background-color: var(--yellow-bg-color);
+}
+
+.footer {
+    background: black;
+    color: white;
+}
+
+.footer a {
+    color: var(--cta-bg-color);
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: 1rem;
+}
+
+.hours-ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.fa-facebook, .fa-instagram {
+    display: inline-block;
+    color: white;
+    font-size: 5rem;
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+/* WORDPRESS PAGE TEMPLATE STYLES */
+
+.page-template h1 {
+    color: var(--header-bg-color);
+    
+}
+
+.page-template li {
+    margin-left: 1.5rem;
+}
+
+/* WORDPRESS BLOG STYLES */
+
+.blog-author-info {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: .3rem;
+    background-color: var(--header-bg-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.blog-author-info a {
+    color: var(--light-blue-bg-color);
+    text-decoration:underline;
+}
+
+.blog-author-info a:hover {
+    color: silver;
+    text-decoration: none;
+}
+
+.blog-item-h2 a {
+    color: var(--header-bg-color);
+    text-decoration: none;
+}
+
+.blog-item-parent { /* front-page blog feed */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.blog-item-child { /* front-page blog feed */
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.flex-parent-blog-item { /* index all blogs */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flex-child-blog-item { /* index all blogs */
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.pagination {   /* index.php blog pagination */
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--header-bg-color);
+    color: white;
+    display: inline-block;
+}
+
+.pagination a {
+    color: var(--light-blue-bg-color);
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: silver;
+    text-decoration: underline;
+}
+
+
+@keyframes gamepad {
+
+    0%{ transform: rotate(0deg);}
+    
+    50%{ transform: rotate(10deg); }
+    
+    100%{ transform: rotate(-10deg);}
+    
+}
+
+@keyframes car {
+
+    0%{ transform: scale(.9);}
+        
+     /* 50%{ transform: scale(.6); } */
+        
+    100%{ transform: scale(1);}
+        
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+
+.site-logo {
+    max-width: 14%;
+    animation: floating 5s infinite alternate;
+}
+
+.mobile-menu {
+    display:none;
+}
+
+.nav-bar {
+    display: block;
+}
+
+.header-flex-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.nav-menu {
+    font-size: 1.3rem;
+}
+
+.nav-menu:hover {
+    color: silver;
+}
+
+.hero-section, .section1, .section3, .section4-h2, .section5, .section6, .copy-right {
+    text-align: center;
+}
+
+.parallax1 {
+    display: flex;
+}
+
+.section1 {
+    display: none;
+}
+
+.flex-parent-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.first-row-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.second-row-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-row-child {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-parent-section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-parent-section6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-parent-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* WORDPRESS BLOG STYLES */
+
+.blog-item-parent { /* front-page blog feed */
+
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.blog-item-child { /* front-page blog feed */
+
+    flex-basis: 48%;
+}
+
+.flex-parent-blog-item { /* index all blogs */
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.flex-child-blog-item { /* index all blogs */
+    flex-basis: 48%;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .site-logo {
+        max-width: 20%;
+        
+    }
+    
+    
+    .flex-parent-footer {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (min-width: 1250px) {
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    .header-container, .container {
+        max-width: 1200px;
+    }
+
+    .nav-menu {
+        font-size: 1.5rem;
+    }
+
+    .section2-p-flex-child {
+        padding: 3rem;
+    }
+
+}
