@@ -31,6 +31,40 @@ while(have_posts()) {
     </div>
 </div>
 
+<div class="author-related-posts">
+
+    <h2 class=""> Otros articulos del mismo autor:</h2>
+
+    <div class="blog-item-parent">
+
+                    <?php 
+                    
+                    $homepagePosts = new WP_Query(array(
+                        'posts_per_page' => 2
+                        
+                    ));
+
+                    while ($homepagePosts->have_posts()) {
+                        $homepagePosts->the_post(); ?>
+            
+                <div class="blog-item-child">
+                    <!-- <article class="blog-item"> -->
+                        <div class="feature-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a></div>
+                        <h2 class="blog-item-h2"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+                        <!-- <p class="blog-author-info">Publicado por: <?php the_author_posts_link(); ?> Fecha: <?php the_time('n-j-Y'); ?> Categoria(s): <?php echo get_the_category_list(', '); ?></p> -->
+                        <!-- <p class="excerpt"><?php echo wp_trim_words(get_the_content(), 18); ?></p> -->
+                        <!-- <p class="read-more"><a class="cta" href="<?php the_permalink(); ?>">Leer mas &raquo;</a></p> -->
+                    <!-- </article> -->
+                </div> <!-- blog-item-child ends here -->
+            
+
+            <?php
+            } wp_reset_postdata();
+            ?>
+    </div> <!-- blog-item-parent ends here -->
+
+</div> <!-- .author-related-posts ends here -->
+
 
 <a class="cta" href="<?php echo site_url('/blog') ?>">Volver a Blogs...</a>
 
