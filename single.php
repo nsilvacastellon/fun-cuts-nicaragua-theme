@@ -38,14 +38,16 @@ while(have_posts()) {
     <div class="blog-item-parent">
 
                     <?php 
+
                     
-                    $homepagePosts = new WP_Query(array(
-                        'posts_per_page' => 2
+                    $authorRelatedPosts = new WP_Query(array(
+                        'posts_per_page' => 4,
+                        'post__not_in' => array(get_the_ID()) // exclude current post ID
                         
                     ));
 
-                    while ($homepagePosts->have_posts()) {
-                        $homepagePosts->the_post(); ?>
+                    while ($authorRelatedPosts->have_posts()) {
+                        $authorRelatedPosts->the_post(); ?>
             
                 <div class="blog-item-child">
                     <!-- <article class="blog-item"> -->
