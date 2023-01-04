@@ -42,10 +42,11 @@ while(have_posts()) {
                     
                     $authorRelatedPosts = new WP_Query(array(
                         'posts_per_page' => 4,
-                        'post__not_in' => array(get_the_ID()) // exclude current post ID
+                        'post__not_in' => array(get_the_ID()), // exclude current post ID from the result
+                        'author' => get_the_author_meta('ID')// only display posts by the current author post
                         
                     ));
-
+                    
                     while ($authorRelatedPosts->have_posts()) {
                         $authorRelatedPosts->the_post(); ?>
             
