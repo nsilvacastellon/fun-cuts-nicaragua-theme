@@ -295,6 +295,10 @@ h1 {
 
 /* WORDPRESS BLOG STYLES */
 
+.feature-img {
+    text-align: center;
+}
+
 .single-blog-content li {
     margin-left: 1.5rem;
 }
