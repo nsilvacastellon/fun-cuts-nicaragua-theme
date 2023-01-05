@@ -15,6 +15,10 @@ add_action('wp_enqueue_scripts', 'fun_cuts_files');
 
 function fun_cuts_features() {
    add_theme_support('title-tag');
+   add_theme_support('post-thumbnails');
+   /*set_post_thumbnail_size( 300, 300, true);*/ /* To implement it: the_post_thumbnail('thumbnail')*/
+   add_image_size( 'index-post-thumbnail', 300, 300, true ); // 300 pixels wide by 300 pixels tall, soft proportional crop mode
+   add_image_size( 'author-post-thumbnail', 150, 150, true ); // 200 pixels wide by 200 pixels tall, hard crop mode
 }
 
 add_action('after_setup_theme', 'fun_cuts_features');
