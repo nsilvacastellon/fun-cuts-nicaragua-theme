@@ -27,9 +27,21 @@ while(have_posts()) {
         <p><?php the_author_meta('user_email'); ?></p>
         <p><?php the_author_meta('user_url'); ?></p> 
     
-</p>
+
     </div>
 </div>
+
+
+<div class="blog-comments">
+<?php
+
+ if ( comments_open() || get_comments_number() ) :
+     comments_template();
+ endif;
+
+ ?>
+
+</div> <!--- End of .blog-comments -->
 
 <div class="author-related-posts">
 

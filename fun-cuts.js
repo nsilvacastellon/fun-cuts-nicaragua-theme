@@ -1,6 +1,7 @@
 let menu = document.querySelector(".fas");
 let nav = document.querySelector(".nav-bar");
-let avatar = document.querySelector(".single-author-avatar");
+let authorAvatar = document.querySelector(".single-author-avatar");
+let commentAvatar = document.querySelector(".comment-author");
 
 // Event listener for mobile menu
 menu.addEventListener("click", () => {
@@ -28,4 +29,5 @@ for (const child of avatarClass.children) {
   return avatarClass;
   
 }
-getRandomAvatar(avatar);
+getRandomAvatar(authorAvatar);
+getRandomAvatar(commentAvatar);
