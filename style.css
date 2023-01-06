@@ -348,6 +348,41 @@ h1 {
     color: black;
 }
 
+.blog-comments {
+    background-color: var(--light-blue-bg-color);
+    padding: 2rem;
+}
+
+.blog-comments form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.blog-comments textarea {
+    resize: none;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+.blog-comments input {
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+.blog-comments .submit {
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    background: var(--cta-bg-color);
+    padding: .30em 1em;
+    margin: 1rem 0;
+}
+
 .blog-item-h2 a {
     color: var(--header-bg-color);
     text-decoration: none;
@@ -554,6 +589,9 @@ h1 {
     display: inline-block;
 }
 
+.blog-comments .submit {
+    font-size: 1.5rem;
+}
 
 .flex-parent-blog-item { /* index all blogs */
     
