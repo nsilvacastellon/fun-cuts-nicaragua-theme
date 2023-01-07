@@ -49,7 +49,7 @@
 
                         <div class="section2-img-flex-child">
 
-                            <img src="<?php echo get_theme_file_uri('images/nina-sentada-recibiendo-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png');?>" alt="niña sentada recibiendo su corte de cabello en peluqueria fun cuts nicaragua" width="500" class="section2-img1">
+                            <img src="<?php echo get_theme_file_uri('images/nina-sentada-recibiendo-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png');?>" alt="niña sentada recibiendo su corte de cabello en peluqueria fun cuts nicaragua" width="500" height="667" class="section2-img1">
 
                         </div>
 
@@ -73,7 +73,7 @@
 
                         <div class="section2-img-flex-child">
 
-                            <img src="<?php echo get_theme_file_uri('images/niño-recibiendo-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png')?>" alt="" class="section2-img2">
+                            <img src="<?php echo get_theme_file_uri('images/niño-recibiendo-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png')?>" width="500" height="667" alt="niño recibiendo su corte de cabello en peluqueria fun cuts nicaragua" class="section2-img2">
 
                         </div>
 
@@ -91,7 +91,7 @@
                         con el Trastorno del Espectro Autista (TEA).
                     </h2>
 
-                    <img src="<?php echo get_theme_file_uri('images/simbolo-autismo.png')?>" alt="" class="section3-img">
+                    <img src="<?php echo get_theme_file_uri('images/simbolo-autismo.png')?>" width="300" height="307" alt="simbolo autismo" class="section3-img">
 
                     <p class="section3-p1"> ¿Te gustaria hacer una cita?</p>
 
@@ -166,13 +166,13 @@
 
                         <div class="flex-child-section4">
 
-                        <img src="<?php echo get_theme_file_uri('images/senora-con-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.jpg')?>" alt="" class="section4-img">
+                        <img src="<?php echo get_theme_file_uri('images/senora-con-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.jpg')?>" width="500" height="667" alt="señora con su corte de cabello en peluqueria fun cuts nicaragua" class="section4-img">
 
                         </div>
 
                         <div class="flex-child-section4">
 
-                        <img src="<?php echo get_theme_file_uri('images/padre-e-hijo-con-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.jpg')?>" alt="" class="section4-img">
+                        <img src="<?php echo get_theme_file_uri('images/padre-e-hijo-con-su-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.jpg')?>" width="500" height="667" alt="padre e hijo con su corte de cabello en peluqueria fun cuts nicaragua" class="section4-img">
 
                         </div>
 
@@ -188,7 +188,7 @@
 
                     <h2 class="section5-h2">Certificado de Primer Corte de Cabello</h2>
 
-                    <img src="<?php echo get_theme_file_uri('images/mama-con-su-hijo-en-brazos-certificado-primer-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png')?>" alt="">
+                    <img src="<?php echo get_theme_file_uri('images/mama-con-su-hijo-en-brazos-certificado-primer-corte-de-cabello-en-peluqueria-fun-cuts-nicaragua.png')?>" width="500" height="667" alt="mama con su hijo en brazos certificado primer corte de cabello en peluqueria fun cuts nicaragua">
 
                     <p class="section5-p"> Certificado gratis de primer corte de cabello, para que tengas un recuerdo de esa grata
                         experiencia.
@@ -208,13 +208,13 @@
                     
                         <div class="flex-child-section6">
 
-                        <img src="<?php echo get_theme_file_uri('images/peinado-niñas-1.jpeg')?>" alt="" class="section6-img1">
+                        <img src="<?php echo get_theme_file_uri('images/peinado-niñas-1.jpeg')?>" width="540" height="540" alt="niñas de pelo largo con su peinado hecho en fun cuts Nicaragua" class="section6-img1">
 
                         </div>
 
                         <div class="flex-child-section6">
 
-                        <img src="<?php echo get_theme_file_uri('images/peinado-niñas-2.jpeg')?>" alt="" class="section6-img2">
+                        <img src="<?php echo get_theme_file_uri('images/peinado-niñas-2.jpeg')?>" width="540" height="540" alt="niñas con moños y trenzas hechas en fun cuts Nicaragua" class="section6-img2">
 
                         </div>
 
