@@ -14,7 +14,7 @@
 
     <div class="header-flex-parent">
 
-        <div class="site-logo"><a href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('images/logo-peluqueria-fun-cuts-nicaragua.png') ?>" alt="Logo Fun Cuts Nicaragua"></a> </div>
+        <div class="site-logo"><a href="<?php echo site_url();?>"><img src="<?php echo get_theme_file_uri('images/logo-peluqueria-fun-cuts-nicaragua.png') ?>" alt="Logo Fun Cuts Nicaragua" width="200" height="150" class="logo"></a> </div>
 
         <div class="mobile-menu">
         
