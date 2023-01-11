@@ -416,6 +416,19 @@ h1 {
     /* border-radius: 100px; */
 }
 
+.content-container {
+    list-style-type: none;
+}
+
+.page_item {
+    list-style-type: none;
+}
+
+.page_item a {
+    text-decoration: none;
+    color: var(--header-bg-color);
+}
+
 .blog-item-h2 a {
     color: var(--header-bg-color);
     text-decoration: none;
