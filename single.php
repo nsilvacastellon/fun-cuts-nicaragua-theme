@@ -83,7 +83,6 @@ while(have_posts()) {
 
 <a class="cta" href="<?php echo site_url('/blog') ?>">Volver a Blogs...</a>
 
-<?php get_search_form(); ?>
 
 </div>
 

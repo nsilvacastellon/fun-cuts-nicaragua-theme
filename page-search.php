@@ -12,12 +12,18 @@ while(have_posts()) {
 
     <div class="container">
 
-        <h1> <?php the_title(); ?></h1>
+        <h1> Buscar</h1>
         
-        <form method="get" action="<?php echo esc_url(site_url('/'));?>">
+        <form class="search-form" method="get" action="<?php echo esc_url(site_url('/'));?>">
 
-            <input type="search" name="s" placeholder="Buscar en el sitio">
-            <input type="submit" value="search">
+            
+            <label for="s">Realiza tu busqueda:</label>
+            
+            
+            <input id="s" type="search" name="s" placeholder="Buscar en el sitio">
+            
+            <input class="cta" type="submit" value="Buscar">
+            
 
 
         </form>

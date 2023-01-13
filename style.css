@@ -486,6 +486,35 @@ h1 {
     text-decoration: underline;
 }
 
+.search-form {
+    background-color: var(--header-bg-color);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+/* .search-form > * {
+    
+} */
+
+.search-form label {
+    color: white;
+}
+
+.search-form input[type=search]{
+    font-size: inherit;
+    border: 2px solid var(--icons-bg-color);
+    padding: .3rem;
+    max-width: 100%;
+}
+
+/* .search-form input[type=submit] {
+    
+} */
+
 
 @keyframes gamepad {
 
@@ -637,6 +666,12 @@ h1 {
 
 .blog-comments .submit {
     font-size: 1.5rem;
+}
+
+.search-form {
+    
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .flex-parent-blog-item { /* index all blogs */
