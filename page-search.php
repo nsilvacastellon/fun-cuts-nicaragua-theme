@@ -20,7 +20,7 @@ while(have_posts()) {
             <label for="s">Realiza tu busqueda:</label>
             
             
-            <input id="s" type="search" name="s" placeholder="Buscar en el sitio">
+            <input id="s" type="search" name="s" placeholder="Buscar en el sitio" required>
             
             <input class="cta" type="submit" value="Buscar">
             
