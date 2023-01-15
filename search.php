@@ -4,6 +4,9 @@ get_header();
 
 <section class="generic-blog">
     <div class="container">
+
+        <?php get_search_form();  ?>
+
         <h1 class="generic-blog-h1">Resultado de la búsqueda:</h1>
         <p class="generic-blog-p"><?php echo 'Estás buscando el término &ldquo;' . esc_html(get_search_query(false)) . '&rdquo;'; ?></p>
         <div class="flex-parent-blog-item">
@@ -28,16 +31,12 @@ get_header();
 
         </div> <!-- flex-parent-blog-item ends here -->
 
-
-          
-
-
             <div>
              
             <span class="pagination"> <?php echo paginate_links(); ?></span>
           
             </div>
-    </div>
+    </div> <!-- .container ends here -->
 </section>
 
 <?php 
