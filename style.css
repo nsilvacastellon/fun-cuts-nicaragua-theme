@@ -98,8 +98,13 @@ h1 {
 .nav-items:last-child {
     background: var(--cta-bg-color);
     padding: .30em .6em;
-    margin: 1rem 0;
+    //margin: 1rem 0;
     
+}
+
+.nav-items:last-child:hover {
+    background-color: black;
+    color: var(--cta-bg-color);
 }
 
 .nav-menu {

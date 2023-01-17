@@ -32,6 +32,7 @@
                 <li class="nav-items"><a href="<?php echo site_url('/tienda');?>" class="nav-menu">Tienda</a></li>
                 <li class="nav-items"><a href="<?php echo site_url('/blog');?>" class="nav-menu">Blog</a></li>
                 <li class="nav-items"><a href="<?php echo site_url('/contacto');?>" class="nav-menu">Contacto</a></li>
+                <li class="nav-items"><a href="<?php echo site_url('/search');?>" class="nav-menu"><i class="fas fa-search"></i></a></li>
                 
                 
             </ul>
