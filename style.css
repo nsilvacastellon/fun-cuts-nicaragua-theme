@@ -209,24 +209,7 @@ h1 {
     padding-top: 3rem;
 }
 
-/* .icons1, .icons2, .icons3 {
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.icons1-1, .icons2-1, .icons3-1 {
-    margin-bottom: 3rem;
-}
-
-.fa-baby, .fa-child, .fa-female, .fa-gamepad, .fa-desktop, .fa-car-side, .fa-air-freshener {
-    color: black;
-    font-size: 10rem;
-    display: block;
-    text-align: center;
-} */
-
-.icons-section a {
+.icons-section span {
     display: block;
     text-align: center;
 }
@@ -538,11 +521,11 @@ h1 {
 
 @keyframes car {
 
-    0%{ transform: scale(.9);}
+    0%{ transform: translateX(0px);}
         
      /* 50%{ transform: scale(.6); } */
         
-    100%{ transform: scale(1);}
+    100%{ transform: translateX(30px);}
         
 }
 
