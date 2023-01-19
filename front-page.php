@@ -108,17 +108,17 @@
                     <div class="first-row-child">
 
                         <div class="baby-icon">
-                        <a href="#"><span class="fas fa-baby"></span></a>
+                        <span class="fas fa-baby"></span>
                         <p>Primer Corte</p>
                         </div>
 
                         <div class="child-icon">
-                        <a href="#"><span class="fas fa-child"></span></a>
+                        <span class="fas fa-child"></span>
                         <p>Barberia Niños</p>
                         </div>
 
                         <div class="female-icon">
-                        <a href="#"><span class="fas fa-female"></span></a>
+                        <span class="fas fa-female"></span>
                         <p>Peluqueria Niñas</p>
                         </div>
 
@@ -127,7 +127,7 @@
                     <div class="second-row-child">
 
                         <div class="gamepad-icon">
-                        <a href="#"><span class="fas fa-gamepad"></span></a>
+                        <span class="fas fa-gamepad"></span>
                         <p>Entretenimiento</p>
                         </div>
 
@@ -136,17 +136,17 @@
                     <div class="third-row-child">
 
                         <div class="desktop-icon">
-                        <a href="#"><span class="fas fa-desktop"></span></a>
+                        <span class="fas fa-desktop"></span>
                         <p>Estaciones con Pantalla</p>
                         </div>
 
                         <div class="car-icon">
-                        <a href="#"><span class="fas fa-car-side"></span></a>
+                        <span class="fas fa-car-side"></span>
                         <p>Corte a Domicilio</p>
                         </div>
 
                         <div class="bottle-icon">
-                        <a href="#"><span class="fas fa-air-freshener"></span></a>
+                        <span class="fas fa-air-freshener"></span>
                         <p>Productos de Belleza</p>
                         </div>
 
@@ -243,8 +243,9 @@
                     ));
 
                     while ($homepagePosts->have_posts()) {
-                        $homepagePosts->the_post(); ?>
-            
+                        $homepagePosts->the_post(); 
+                        if (have_posts()) {?>
+                    
                 <div class="blog-item-child">
             <!-- <article class="blog-item"> -->
                 <div class="feature-img"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('index-post-thumbnail'); ?></a></div>
@@ -255,6 +256,11 @@
             <!-- </article> -->
             </div> <!-- blog-item-child ends here -->
             
+            <?php } 
+            
+            else {  echo '<h3>No se encontro ninguna entrada de blog, intenta más tarde.</h3>' ;  }
+            
+            ?>
 
             <?php
             } wp_reset_postdata();
