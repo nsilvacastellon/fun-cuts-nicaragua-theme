@@ -2,6 +2,7 @@ let menu = document.querySelector(".fas");
 let nav = document.querySelector(".nav-bar");
 let authorAvatar = document.querySelector(".single-author-avatar");
 let commentAvatar = document.querySelector(".comment-author");
+let getDate = document.querySelector(".check-date");
 
 // Event listener for mobile menu
 menu.addEventListener("click", () => {
@@ -31,3 +32,10 @@ for (const child of avatarClass.children) {
 }
 getRandomAvatar(authorAvatar);
 getRandomAvatar(commentAvatar);
+
+function getFooterDate (footer) {
+    let today = new Date();
+    footer.textContent = today.getFullYear();
+}
+
+getFooterDate(getDate);
