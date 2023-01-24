@@ -30,8 +30,8 @@ for (const child of avatarClass.children) {
   return avatarClass;
   
 }
-getRandomAvatar(authorAvatar);
-getRandomAvatar(commentAvatar);
+//getRandomAvatar(authorAvatar);
+//getRandomAvatar(commentAvatar);
 
 function getFooterDate (footer) {
     let today = new Date();

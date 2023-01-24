@@ -578,8 +578,7 @@ h1 {
 
 .nav-menu:hover {
     color: white;
-    outline: 3px solid red;
-    background-color: black;
+    background-color: var(--cta-bg-color);
     padding: .3rem;
 }
 
