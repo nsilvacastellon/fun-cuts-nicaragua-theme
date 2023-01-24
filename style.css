@@ -577,8 +577,9 @@ h1 {
 }
 
 .nav-menu:hover {
-    color: silver;
-    outline: 3px solid black;
+    color: white;
+    outline: 3px solid red;
+    background-color: black;
     padding: .3rem;
 }
 
