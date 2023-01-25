@@ -28,11 +28,12 @@ while(have_posts()) {
         <p><?php the_author_meta('user_url'); ?></p> 
     
 
-    </div>
-</div>
+     </div><!--.single-author-description ends here -->
+</div><!--.single-author-bio ends here -->
 
-
+</div><!--.container ends here -->
 <div class="blog-comments">
+<div class="container">
 <?php
 
  if ( comments_open() || get_comments_number() ) :
@@ -42,6 +43,9 @@ while(have_posts()) {
  ?>
 
 </div> <!--- End of .blog-comments -->
+</div><!--.container ends here -->
+
+<div class="container">
 
 <div class="author-related-posts">
 
@@ -84,7 +88,7 @@ while(have_posts()) {
 <a class="cta" href="<?php echo site_url('/blog') ?>">Volver a Blogs...</a>
 
 
-</div>
+</div><!--.container ends here -->
 
 
 <?php

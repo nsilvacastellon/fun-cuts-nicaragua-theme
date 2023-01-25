@@ -97,6 +97,10 @@ h1 {
     gap: .5rem;
 }
 
+.nav-items {
+    padding: .3rem;
+}
+
 .nav-items:last-child {
     background: var(--cta-bg-color);
     padding: .30em .6em;
@@ -576,10 +580,9 @@ h1 {
     font-size: 1.1rem;
 }
 
-.nav-menu:hover {
+.nav-items:hover {
     color: white;
     background-color: var(--cta-bg-color);
-    padding: .3rem;
 }
 
 .hero-section, .section1, .section3, .section4-h2, .section5, .section6, .copy-right {
