@@ -61,7 +61,7 @@
 
             </div><!-- flex-parent-footer ends-->
 
-            <p class="copy-right">Todos Los Derechos Reservados Fun Cuts Nicaragua &copy; <span class="check-date">2022</span><br> made with love by josewebdesigner.com </p>
+            <p class="copy-right">Todos Los Derechos Reservados Fun Cuts Nicaragua &copy; <span class="check-date">2022</span></p>
             
             <img src="<?php echo get_theme_file_uri('images/positive-ssl-logo.png') ?>" alt="">
 
