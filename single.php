@@ -24,8 +24,10 @@ while(have_posts()) {
     <div class="single-author-description">
         
         <p><?php the_author_meta('description'); ?></p>
-        <p><?php the_author_meta('user_email'); ?></p>
-        <p><?php the_author_meta('user_url'); ?></p> 
+        <!-- <p><?php the_author_meta('user_email'); ?></p> -->
+        <!-- <p><?php the_author_meta('user_url'); ?></p>  -->
+        <a class="cta" href="<?php echo esc_url( 'mailto:' . get_the_author_meta('user_email') ); ?>">Email</a>
+        <a class="cta" href="<?php echo esc_url( get_the_author_meta('user_url') ); ?>">Website</a>
     
 
      </div><!--.single-author-description ends here -->
