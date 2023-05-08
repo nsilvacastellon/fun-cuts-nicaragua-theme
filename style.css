@@ -302,6 +302,11 @@ h1 {
     text-align: center;
 }
 
+.single-blog-content p {
+    padding-bottom: 2rem;
+    
+}
+
 .single-blog-content li {
     margin-left: 1.5rem;
 }
@@ -579,7 +584,7 @@ h1 {
 }
 
 .nav-menu {
-    font-size: 1.1rem;
+    font-size: 1.1rem; 
 }
 
 .nav-items:hover {
